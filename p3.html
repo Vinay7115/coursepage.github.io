@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>page3</title>
+  <link rel="stylesheet" href="pi3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="heading">
+    <img src="p3.jpeg" />
+  </div>
+
+  <!-- ---------------topic1------------------------------- -->
+
+  <div id="about">
+    <div class="container1">
+      <div class="row">
+        <div class="about-col-1">
+          <i class="fa-solid fa-arrows-to-dot"></i>
+        </div>
+        <div class="about-col-2">
+          <p>LECTURE TOPICS</p>
+        </div>
+        <div class="about-col-3" onclick="toggleVisibility('empty')">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------creating blank div --------------------------- -->
+
+  <div id="empty" style="display: none">
+    <h1>HAPPY LEARNING</h1>
+  </div>
+
+  <!-- ----------------------------------------- -->
+  <div id="about1">
+    <div class="container1">
+      <div class="row">
+        <div class="about-col-1">
+          <i class="fa-solid fa-arrows-to-dot"></i>
+        </div>
+        <div class="about-col-2">
+          <p>READINGS</p>
+        </div>
+        <div class="about-col-3" onclick="toggleVisibility('empty1')">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------creating blank div --------------------------- -->
+
+  <div id="empty1" style="display: none">
+    <h1>HAPPY LEARNING</h1>
+  </div>
+
+  <!-- ----------------------------------------- -->
+
+  <div id="about1">
+    <div class="container1">
+      <div class="row">
+        <div class="about-col-1">
+          <i class="fa-solid fa-arrows-to-dot"></i>
+        </div>
+        <div class="about-col-2">
+          <p>ASSIGNMENTS</p>
+        </div>
+        <div class="about-col-3" onclick="toggleVisibility('empty2')">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------creating blank div --------------------------- -->
+
+  <div id="empty2" style="display: none">
+    <h1>HAPPY LEARNING</h1>
+  </div>
+
+  <!-- ----------------------------------------- -->
+
+  <div id="about1">
+    <div class="container1">
+      <div class="row">
+        <div class="about-col-1">
+          <i class="fa-solid fa-arrows-to-dot"></i>
+        </div>
+        <div class="about-col-2">
+          <p>RESOURCES</p>
+        </div>
+        <div class="about-col-3" onclick="toggleVisibility('empty3')">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------creating blank div --------------------------- -->
+
+  <div id="empty3" style="display: none">
+    <h1>HAPPY LEARNING</h1>
+  </div>
+
+  <!-- ------------------copyright------------------------- -->
+
+  <div class="copyright">
+    <p>copyright @ Kevin. Made with Vinay</p>
+  </div>
+
+  <!-- -----------------javascript ----------------- -->
+
+  <script>
+    function toggleVisibility(id) {
+      var element = document.getElementById(id);
+      if (element.style.display === "none") {
+        element.style.display = "flex";
+      } else {
+        element.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>
